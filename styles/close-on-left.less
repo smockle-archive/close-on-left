@@ -1,0 +1,36 @@
+atom-pane .tab-bar {
+  .tab {
+    // Hide icons in tabs
+    .title:before {
+      display: none;
+    }
+
+    // Left align close button and modified indicator in tabs
+    &.active .title, .title {
+      padding-left: 28px;
+    }
+    .close-icon {
+      margin-left: 10px;
+      margin-right: auto;
+    }
+    &.modified:not(:hover) .close-icon, .close-icon {
+      right: initial;
+    }
+
+    // Size tabs to fit available space
+    &.active[data-type="TextEditor"], & {
+      max-width: none;
+      min-width: initial;
+      width: auto;
+      padding: 0;
+    }
+    &.active {
+      flex: 1;
+    }
+  }
+
+  // Don't show blue indicator in an empty tab-bar
+  &:empty:before {
+    background: transparent;
+  }
+}
