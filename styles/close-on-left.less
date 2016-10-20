@@ -1,11 +1,7 @@
 atom-pane .tab-bar {
   .tab {
     // Left align close button and modified indicator in tabs
-    &.active .title, .title {
-      padding-left: 28px;
-    }
-
-    .title[data-name], .title.icon-tools {
+    &.active .title, .title, .title[data-name], .title.icon-tools {
       padding-left: 28px;
     }
 
@@ -13,6 +9,11 @@ atom-pane .tab-bar {
       margin-left: 4px;
       margin-right: auto;
     }
+
+    &.active .close-icon {
+      margin-left: 8px;
+    }
+
     &.modified:not(:hover) .close-icon, .close-icon {
       right: initial;
     }
