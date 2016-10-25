@@ -9,9 +9,12 @@ atom-pane .tab-bar {
       margin-left: 4px;
       margin-right: auto;
     }
-
-    &.active .close-icon {
-      margin-left: 8px;
+    
+    .theme-one-dark-ui &,
+    .theme-one-light-ui & {
+      &.active .close-icon {
+        margin-left: 8px;
+      }
     }
 
     &.modified:not(:hover) .close-icon, .close-icon {
