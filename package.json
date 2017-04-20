@@ -1,7 +1,7 @@
 {
   "name": "close-on-left",
   "main": "./lib/close-on-left",
-  "version": "0.7.2",
+  "version": "0.8.0",
   "description": "Positions the close button on the left side of tabs.",
   "repository": "https://github.com/smockle/close-on-left",
   "license": "ISC",
